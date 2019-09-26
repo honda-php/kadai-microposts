@@ -1,4 +1,4 @@
-@if count(($users) > 0)
+@if (count($users) > 0)
     <ul class="list-unstyled">
         @foreach($users as $user)
             <li class="media">
@@ -14,5 +14,5 @@
             </li>
         @endforeach
     </ul>
-    {{ $users->links('pagination::botstrap-4') }}
+    {{ $users->links('pagination::bootstrap-4') }}
 @endif
