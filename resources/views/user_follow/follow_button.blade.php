@@ -4,7 +4,7 @@
             {!! Form::submit('Unfollow', ['class' => 'btn btn-danger btn-block']) !!}
         {!! Form::Close() !!}
     @else
-        {!! Form::open(['route' => ['user.follows', $user->id]]) !!}
+        {!! Form::open(['route' => ['user.follow', $user->id]]) !!}
             {!! Form::submit('Follow', ['class' => 'btn btn-primary btn-block']) !!}
         {!! Form::Close() !!}
     @endif
